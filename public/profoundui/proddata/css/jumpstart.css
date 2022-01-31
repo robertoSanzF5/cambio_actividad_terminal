@@ -1,0 +1,422 @@
+body {
+  margin: 8px;
+}
+
+.section {
+  border: 2px solid #cccccc;
+  margin-bottom: 10px;
+}
+
+.section-heading {
+  background-color: #eeeeee;
+  color: #666666;
+  font-family: Sans-Serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 5px 5px 10px;
+  height: 20px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.section-body {
+  color: #666666;
+  font-family: Sans-Serif;
+  font-size: 14px;
+  padding: 15px 5px 5px 10px;
+}
+
+.label {
+  float: left;
+  width: 200px;
+  
+}
+
+.dropdown {
+  width: 250px;
+}
+
+.textbox {
+  width: 245px;
+  font-family: Trebuchet MS, Monospace;
+}
+
+.wide-textbox {
+  width: 400px;
+  font-family: Trebuchet MS, Monospace;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.form-row {
+  padding-bottom: 10px;
+  clear: left;
+  overflow: auto;
+}
+
+.extraFilesRow {
+  padding-bottom: 10px;
+  overflow: auto;
+}
+
+table.field-list {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table.field-list td {
+  font-family: Sans-Serif;
+  font-size: 11px;
+  font-weight: bold;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+table.field-list input.grid-input {
+  font-family: Sans-Serif;
+  font-size: 11px;
+  font-weight: bold;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  color: #666666;
+  outline: 0;
+  padding: 1px;
+}
+
+table.field-list tr.move_valid {
+  border-bottom: 3px dashed #999999;
+}
+
+#fieldSelectionSection .move-button-wrap {
+  float: right;
+  margin-right: 20px;
+  font-weight: normal;
+}
+
+.move-up-button, .move-down-button {
+  font-family: Sans-Serif;
+  font-size: 11px;
+  width: 140px;
+}
+
+table td.header, table.join-list thead td {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #d0dafd;  
+}
+
+table td.checkbox-column {
+  width: 70px;
+}
+
+table td.field-column, table thead td.coalesce-column {
+  width: 180px;
+}
+
+table td.length-type-column {
+  width: 80px;
+}
+
+table thead td.null-column { width: 40px; }
+
+table tbody td.null-column { 
+  color: blue;
+}
+
+table td.key-column {
+  width: 40px;
+}
+
+table input.recommend {
+  background-color: #ffffc6;
+}
+
+.button {
+  font-family: Sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: small-caps;
+  width: 250px;
+  color: #333333;
+}
+
+.wait-message {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  background-color: #999999;
+  color: #000000;
+  text-align: center;
+  padding-top: 150px;
+  font-family: Sans-Serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.designer-link, .libl-link {
+  color: blue;
+  font-family: Sans-Serif;
+  font-size: 12px;
+}
+
+.designer-iframe {
+  position: absolute;
+  top: -999px;
+  left: -999px;
+  width: 600px;
+  height: 200px;  
+}
+
+p.warning {color: red; margin: 0px;}
+
+span.warning {
+  font-family: Sans-Serif;
+  font-size: 12px;
+  color: #000000;
+  background-color: #ffffc6;
+  padding: 4px;
+  border: 1px solid #6666ff;
+}
+
+/* Field name warning. */
+table.field-list span.warning {
+  color: salmon;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+table.field-list input.warning, table.join-list input.warning {
+  background-color: rgb(255,200,200);
+}
+
+#sqlindexWarning {
+  animation-name: warnsqlindex;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  margin-left: 3px;
+}
+
+@keyframes warnsqlindex {
+  50%  {background-color: #ffc6c6;}
+}
+
+@keyframes warnfadein {
+  50% {opacity: 0;}
+}
+
+tr.join_origin {
+  border: dashed 2px gray;
+}
+
+tr.join_valid {
+  border: dashed 2px green;
+}
+
+tr.move_dragover {
+  border-bottom: dashed 2px green;
+}
+
+#joinSelectionSection {
+  position: relative;
+  font-family: Sans-Serif;
+}
+
+#joinSelectionSection .s-resizer {
+  background-color: #cccccc;
+  height: 5px;
+  cursor: s-resize;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#joinSelectionSection .help {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: white;
+}
+
+#joininfobox {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0px;
+  padding: 5px;
+  border: solid 1px black;
+  background-color: #ffffc6;
+  z-index: 100;
+  visibility: hidden;
+}
+
+#joinSelectionSection .section-body {
+  resize: vertical;
+  position: relative;
+  min-height: 300px;
+  max-height: 800px;
+  overflow-y: auto;
+  padding: 0px;
+}
+
+table.join-list {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table.join-list caption {
+  background: beige;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px 10px 5px 10px;
+  border-style: solid solid none solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  
+  cursor: move;
+  user-select: none; /*prevent text selection while dragging.*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+table.join-list td {
+  font-family: Sans-Serif;
+  font-size: 11px;
+  font-weight: bold;
+  border-width: 0px 1px 1px 1px;
+  border-style: none solid solid solid;
+  border-color: rgb(200,200,200);
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+table.join-list td.correl{
+  border-top-width: 3px;
+  border-top-style: solid;
+  cursor: default;
+}
+
+table.join-list tbody td {
+  cursor: pointer;
+  cursor: grab;
+  cursor: -moz-grab;    /*Old Mozilla*/
+  cursor: -webkit-grab; /*Chrome.*/
+  background-color: rgb(245,245,245);
+}
+
+#joinsvg {
+  border-bottom: dotted 1px #cccccc;
+  margin: -1px;
+}
+
+#joinsvg .joinlink {
+  cursor: pointer;
+}
+
+#joinEditor {
+  width: 395px;
+  padding: 0px;
+  height: 222px;
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  border: 2px solid #336699;
+  border-radius: 4px;
+  box-shadow: 3px 3px 6px rgba(50, 66, 64, 0.67);
+}
+
+#joinEditor .dialog-header {
+  font-size: 11px;
+  font-family: Arial;
+  background-color: #6699cc;
+  padding: 4px 3px 3px 3px;
+  cursor: move;
+  font-weight: bold;
+  color: #ffffff;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  white-space: normal;
+  width: 100%;
+  
+  background-color: #dddddd;
+  color: #333333;
+  height: 25px;
+  
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#joinEditor .dialog-header > div.close-btn {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+#joinEditor .dialog-header > div.close-btn > div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  background-image: url(/profoundui/proddata/images/buttons/close/x1.png);
+  background-repeat: no-repeat;
+}
+
+#joinEditor .dialog-header > div.close-btn > div:hover {
+  background-image: url(/profoundui/proddata/images/buttons/close/x1_hover.png);
+}
+
+#joinEditor .dialog-body {
+  overflow: auto;
+  height: 182px;
+  width: 375px;
+  padding: 10px;
+  background-color: rgb(238, 238, 238);
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  white-space: normal;
+  
+  font-family: Arial;
+  font-size: 12px;
+}
+
+#joinEditor .dialog-body p {
+  margin-bottom: 10px;
+}
+
+#joinEditor .dialog-body input[type="button"] {
+  position: absolute;
+  bottom: 10px;
+  width: 75px;
+}
+
+#sqlpreview pre { margin:0px; }

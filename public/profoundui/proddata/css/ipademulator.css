@@ -1,0 +1,38 @@
+
+
+.ipad-emulator {
+	background-image: url('/profoundui/proddata/images/ipad/ipad_landscape.png'); 
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 852px;
+	width: 1108px;
+	cursor: crosshair; 
+}
+
+
+.ipad-emulator #pui {
+  position: absolute;
+  left: 42px;
+  top: 120px;
+  height: 687px;
+  width: 1022px;
+  overflow: auto;
+  cursor: crosshair; 
+}
+
+
+.ipad-keyboard {
+	background-image: url('/profoundui/proddata/images/ipad/ipad_keyboard_landscape.png'); 
+	background-repeat: no-repeat;
+  height: 353px;
+  width: 1024px;
+  position: absolute;
+  left: 42px;  
+  top: 457px;
+}
+
+div.menu, div.menu td {
+  cursor: crosshair;
+}

@@ -1,0 +1,15 @@
+div.Atrium-banner {
+
+  margin: 0px; 
+  width: 100%;
+  height: 100px;
+  background-image: url(/profoundui/userdata/images/banner_edge.png);
+  background-repeat: repeat-x;
+
+}
+
+body.Atrium-banner {
+
+  margin: 0px;
+  
+}

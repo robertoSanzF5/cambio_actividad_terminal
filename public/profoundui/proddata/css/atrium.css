@@ -1,0 +1,54 @@
+/* Prevents collapsing of empty combo box items in FireFox */
+.ext-gecko .x-combo-list-item {
+
+  height: 15px;
+  
+}
+
+fieldset.column {
+
+  float: left;
+  margin-right: 15px;
+
+}	
+
+.search-item {
+    font: normal 11px tahoma, arial, helvetica, sans-serif;
+    padding: 2px;
+    border: 1px solid #FFF;
+    border-bottom: 1px solid #EEEEEE;
+    color: #555;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.search-column1 {
+	float: left;
+	white-space: nowrap; 
+	overflow: hidden; 
+
+}
+
+.search-column2 {
+	float: left;
+	text-align: right; 
+	white-space: nowrap; 
+	overflow: hidden; 
+}
+
+
+.Atrium-ie8Compat .x-form-text {
+    margin: 0px 0px;
+}
+
+div.Atrium-macroDetails a:visited {
+  color: rgb(0, 102, 204);
+}
+
+div.Atrium-macroDetails a {
+  color: rgb(0, 102, 204);
+}
+
+/* Dummy class to enable easy location of tabs. */
+iframe.selector {
+}

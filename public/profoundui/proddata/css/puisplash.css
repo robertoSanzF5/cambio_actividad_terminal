@@ -1,0 +1,189 @@
+
+body{
+font-family: helvetica;
+}
+
+
+#container{
+border-style: solid;
+border-color: #7b7c7f;
+border-width: thin;
+}
+
+
+#image {
+position: relative;
+margin: 0px;
+padding: 0px;
+height: 580px;
+
+}
+
+
+img {
+margin: 0px;
+padding: 0px;
+border: none;
+}
+
+
+#heading{
+position: absolute;
+top: 148px;
+left: 250px;
+font-style: italic;
+font-size: 31px;
+overflow: hidden;
+}
+
+
+#new {
+left: 150px;
+}
+
+
+#modernize {
+left: 480px;
+}
+
+
+#integrate {
+left: 790px;
+}
+
+
+.label {
+font-size: 18px;
+position: absolute;
+top: 245px;
+width: 135px;
+height: 50px;
+text-align: center;
+color: white;
+}
+
+
+#profound {
+position: absolute;
+top: 563px;
+left: 300px;
+font-size: 11px;
+font-weight: bold;
+}
+
+
+
+/* Menus */
+
+.menu{
+position: absolute;
+
+top: 315px;
+width: 231px;
+height: 185px;
+text-align: left;
+overflow-y: auto;
+}
+
+#devMenu {
+left: 50px;
+}
+
+#modMenu {
+left: 375px;
+}
+
+#intMenu {
+left: 685px;
+}
+
+.menuLine {
+position: relative;
+font-size: 12px;
+cursor: pointer;
+overflow:hidden;
+}
+
+#devMenu  .menuLine:hover{
+background-color: #FCC184;
+}
+
+#modMenu  .menuLine:hover{
+background-color:  #CBE5C3;
+}
+
+#intMenu .menuLine:hover{
+background-color: #B2E2F0;
+}
+
+.level1 {
+margin-left: 0px;
+font-weight: bold;
+background-color: #ffffff;
+}
+
+.level2 {
+margin-left: 16px;
+
+}
+
+.level3 {
+margin-left: 32px;
+}
+
+.menu a {
+color: black;
+text-decoration: none;	
+}
+
+
+img.expander {
+border-style: solid;
+border-color: transparent;
+border-width: 2px;
+margin-top: 2px;
+margin-right: 2px;
+width: 12px;
+height: 12px;
+}
+
+#update {
+position: absolute;
+top: 20px;
+right: 5px;
+font-size: 11px;
+font-weight: bold;
+z-index: 10;
+}
+
+#update a {
+color: #005581;
+letter-spacing: -0.5px;
+}
+
+
+#keys {
+position: absolute;
+top: 35px;
+right: 5px;
+font-size: 11px;
+font-weight: bold;
+z-index: 10;
+}
+
+
+#keys a {
+color: #005581;
+letter-spacing: -0.5px;
+}
+
+#versionDiv {
+  position: absolute;
+  color: #005581;
+  top: 5px;
+  right: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  z-index: 10;  
+
+}

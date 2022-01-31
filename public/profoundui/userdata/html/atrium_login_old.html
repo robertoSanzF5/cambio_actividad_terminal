@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Atrium Web Portal</title>
+  <script type="text/javascript" src="/profoundui/proddata/js/signon.js"></script>
+  <script type="text/javascript">
+  
+    var authMessages = {
+    
+      "user required": "User name is required.",
+      "password required": "Password is required.",
+      "invalid credentials": "User name or password is invalid.",
+      "password expired": "Your password is expired.",
+      "password pending expiration": "Your password will expire in {DAYS} days.\n\n" + 
+                                     "Would you like to set a new password now?\n\n" + 
+                                     "Click \"OK\" to set a new password or \"Cancel\" to sign on without changing your password."
+      
+    };
+    
+  </script>
+  
+  <style type="text/css">
+  
+    body {
+    
+      font-family: tahoma, arial, helvetica, sans-serif;
+      font-size: 12px;
+      margin: 0;
+      padding: 0;
+    
+    }
+   
+    div.auth-box {
+    
+      background: transparent url(/profoundui/proddata/images/atrium_login.png) no-repeat;
+      width: 383px;
+      height: 222px;  
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: -111px 0 0 -191.5px;  
+    
+    }
+    
+    form.auth-form {
+    
+      margin: 90px 0px 0px 135px;  
+    
+    }
+    
+    form.auth-form div {
+    
+      margin-bottom: 3px;
+    
+    }
+    
+    form.auth-form label {
+    
+      float: left;
+      width: 60px;
+    
+    }    
+    
+    form.auth-form input.auth-textbox {
+    
+      width: 125px;
+    
+    }
+    
+    form.auth-form span.auth-message {
+    
+      color: red;
+    
+    }
+     
+  </style>
+  
+</head>
+
+<body onload="pui.signOnInit();">
+
+  <div class="auth-box" id="auth-box" style="display: none;">
+  
+    <form id="auth-form" class="auth-form" method="post" action="/profoundui/atrium/menu" onsubmit="return pui.signOn();" autocomplete="off" >
+    
+      <div><label for="auth-user">User:</label><input id="auth-user" name="auth-user" type="text" class="auth-textbox" /></div>
+      
+      <div><label for="auth-password">Password:</label><input id="auth-password" name="auth-password" type="password" class="auth-textbox" /></div>
+      
+      <div><input type="submit" value="Sign On" /></div>
+      
+      <div><span id="auth-message" class="auth-message"></span></div>
+      
+    </form>
+    
+  </div>
+  
+</body>
+
+</html>

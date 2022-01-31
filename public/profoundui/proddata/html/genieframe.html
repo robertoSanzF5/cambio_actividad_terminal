@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title></title>
+  <script>
+    function addEvents() {
+      if (window.attachEvent) {
+        window.attachEvent("onbeforeunload", beforeUnload);
+        window.attachEvent("onunload", unload);
+      }
+      else if (window.addEventListener) {
+        window.addEventListener("beforeunload", beforeUnload, false);
+        window.addEventListener("unload", unload, false);        
+      }
+    }
+    function beforeUnload(event) {
+      if (parent.main.beforeUnload) parent.main.beforeUnload(event);
+    }
+    function unload(event) {
+      if (parent.main.unload) parent.main.unload(event);
+    }
+  </script>
+</head>
+<body onload="addEvents()">
+</body>
+</html>

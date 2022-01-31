@@ -1,0 +1,92 @@
+/* Styles for the Visual Designer's Responsive Layout Editor's Preview Iframe.
+   Draggable lines are more opaque than guide lines. Lines are more opaque on hover,
+   and on hovering on a line, text should be more visible.
+ */
+body { 
+  background-color:black;
+  color:white;
+  margin:0px;
+  font-family: Trebuchet MS;
+}
+
+#_id_ { position:relative; z-index: 20; }
+
+svg { 
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index: 30;
+  /* Inline styles will override with and height when body has overflow. */
+  width: 100%;
+  height: 100%;
+}
+
+svg text {
+ font-size:10px;
+ fill: white;
+ opacity: 0.50;
+}
+
+svg line {
+  stroke: white;
+  stroke-width: 2;
+  opacity: 0.25;
+  stroke-dasharray: 10,10;
+}
+
+svg line:hover, svg line.drag:hover { opacity: 1.00; }
+
+/* The text immediately after the line is associated with it. Show it when line is hovered. */
+svg line:hover + text, svg line.drag:hover + text {
+  opacity: 1.00;
+  font-size: 14px;
+}
+
+svg line.drag { 
+  stroke-dasharray: 30,1;
+  stroke-width: 5;
+  opacity: 0.5;
+}
+svg line.drag.vert { cursor: ew-resize; }
+svg line.drag.horz { cursor: ns-resize; }
+
+svg rect.drag {
+  fill: white;
+  fill-opacity: 0.15;
+  cursor: move;
+}
+
+.puiresp {
+  width: 100%;
+  height: 100%;
+  /*In runtime, overflow is auto. It must be visible for the Preview to work with the SVG.*/
+  overflow: visible;
+}
+.puiresp > div {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+/* Also add extra colors so the preview DIVs will stand out. */
+#_id_ > .puiresp > div:nth-child(1n) {background-color:rgba(255,0,0, 0.50);}
+#_id_ > .puiresp > div:nth-child(2n) {background-color:rgba(255,170,0, 0.50);}
+#_id_ > .puiresp > div:nth-child(3n) {background-color:rgba(255,255,0, 0.50);}
+#_id_ > .puiresp > div:nth-child(4n) {background-color:rgba(165,247,0, 0.50);}
+#_id_ > .puiresp > div:nth-child(5n) {background-color:rgba(19,78,215, 0.50);}
+#_id_ > .puiresp > div:nth-child(6n) {background-color:rgba(142,10,215, 0.50);}
+
+
+/*Warning message for IE users.*/
+div.iewarn {
+  font-size: 16px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: black;
+  opacity: 0.90;
+}

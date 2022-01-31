@@ -1,0 +1,94 @@
+
+body {
+
+  text-align: center;
+  margin: 0px;
+  font-family: sans-serif;
+  font-size: 12px;
+  
+}
+
+div.container {
+
+  margin: 15px auto 0px auto;
+  width: 970px;
+  height: 1300px;
+  background: #CEEBED url(/profoundui/proddata/images/splash/PLS-Front-Page-Plain.png) no-repeat;
+  border: #7B7C7F thin solid;
+  
+}
+
+div.content {
+
+  padding: 130px 10px 10px 10px;
+  text-align: left;
+
+}
+
+div.column1 {
+
+  float: left;
+  
+}
+
+div.column2 {
+
+  float: left;
+  clear: right;
+  margin-left: 150px;
+
+}
+
+div.keyInput {
+
+  margin: 10px 0px 10px 0px;  
+
+}
+
+div.keyDisplay {
+
+  float: left;
+  margin: 20px 0px 0px 0px;
+
+}
+
+div.keyInput textarea {
+
+  width: 350px; 
+  height: 50px;
+  font-family: monospace;
+  text-transform: uppercase;
+
+}
+
+h2 {
+
+  text-align: center;
+
+}
+
+h4 {
+
+  margin-bottom: 5px;
+
+}
+
+p.error {
+
+  color: red;
+  float: left;
+  width: 350px;
+
+}
+
+div.key {
+
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ width: 900px;
+
+}  
+    

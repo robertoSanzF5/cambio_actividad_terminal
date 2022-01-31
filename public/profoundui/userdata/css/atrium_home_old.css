@@ -1,0 +1,32 @@
+
+body {
+
+  text-align: center;
+  margin: 0px;
+  background: #CEEBEC url(/profoundui/proddata/images/splash/Single-Column-PLS.png) repeat-x;
+  font-family: sans-serif;
+  
+}
+
+div.container {
+
+  margin: auto;
+  width: 970px;
+  height: 580px;
+  background-image: url(/profoundui/proddata/images/splash/PLS-Front-Page-Plain.png);
+  background-repeat: no-repeat;
+  
+}
+
+div.content {
+
+  padding-top: 200px;
+  text-align: left;
+
+}
+
+h2 {
+
+  text-align: center;
+
+}
