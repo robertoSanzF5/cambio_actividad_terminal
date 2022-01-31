@@ -3,9 +3,9 @@
 //DEFINIMOS CONTROLADOR SEGÚN LA VISTA SOLICITADA
 if (($user = User::getCurrentUser()) != null) {// && isset($_GET['site'])) {
     $validActions = [
-        'resumen_cuadrante', 'actividades_grupo', 'detalle_actividad', 'sel_grupo_dft',
+       /* 'resumen_cuadrante', 'actividades_grupo', 'detalle_actividad', 'sel_grupo_dft',
         'edit_jornada', 'nueva_actividad', 'ver_fichajes_evalos', 'control_acceso_reconstruir',
-        'sel_grupo', 'sel_actividad', 'ncontrol_acceso', 'costes_por_trabajador'
+        'sel_grupo', 'sel_actividad', 'ncontrol_acceso', 'costes_por_trabajador'*/
     ];
 
     if (isset($_GET['site']) && in_array($_GET['site'], $validActions)) {
