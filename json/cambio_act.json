@@ -1,0 +1,237 @@
+{
+  "text": "",
+  "formats": [
+    {
+      "screen": {
+        "record format name": "ftm01"
+      },
+      "items": [
+        {
+          "id": "ly_principal",
+          "field type": "layout",
+          "left": "0px",
+          "top": "0px",
+          "template": "simple container",
+          "height": "100%",
+          "width": "100%"
+        },
+        {
+          "id": "ly_cabecera",
+          "field type": "layout",
+          "left": "0px",
+          "top": "0px",
+          "template": "simple container",
+          "height": "10%",
+          "width": "100%",
+          "layout": "ly_principal",
+          "container": "1"
+        },
+        {
+          "id": "ly_cambio_grupo",
+          "field type": "layout",
+          "left": "0px",
+          "top": "10%",
+          "template": "simple container",
+          "height": "40%",
+          "width": "100%",
+          "layout": "ly_principal",
+          "container": "1"
+        },
+        {
+          "id": "Layout4",
+          "field type": "layout",
+          "left": "0px",
+          "top": "50%",
+          "template": "simple container",
+          "height": "40%",
+          "width": "100%",
+          "layout": "ly_principal",
+          "container": "1"
+        },
+        {
+          "id": "bt_cierre_copy",
+          "field type": "css button",
+          "value": "Cambiar Actividad",
+          "response": {
+            "fieldName": "bt_cierre",
+            "customTrue": "",
+            "customFalse": "",
+            "dataType": "indicator",
+            "formatting": "Indicator",
+            "indFormat": "1 / 0"
+          },
+          "color": {
+            "fieldName": "btcierre_color",
+            "dataLength": "25",
+            "trimLeading": "false",
+            "trimTrailing": "true",
+            "blankFill": "false",
+            "rjZeroFill": "false",
+            "dataType": "varchar",
+            "formatting": "Text",
+            "textTransform": "none"
+          },
+          "font size": "20px",
+          "text align": "center",
+          "theme": "C - Gray",
+          "disabled": {
+            "fieldName": "btcierre_disabled",
+            "customTrue": "",
+            "customFalse": "",
+            "dataType": "indicator",
+            "formatting": "Indicator",
+            "indFormat": "true / false"
+          },
+          "left": "-50px",
+          "top": "125px",
+          "height": "45px",
+          "width": "330px",
+          "onclick": "cargarControl('cierre_jornada');",
+          "layout": "Layout4",
+          "container": "1"
+        },
+        {
+          "id": "Label2_copy",
+          "field type": "output field",
+          "css class": "label",
+          "value": "Label:",
+          "left": "-35px",
+          "top": "60px",
+          "width": "80px",
+          "layout": "Layout4",
+          "container": "1"
+        },
+        {
+          "id": "Dropdown1_copy",
+          "field type": "select box",
+          "choices": "Option 1,Option 2",
+          "left": "75px",
+          "top": "60px",
+          "width": "205px",
+          "layout": "Layout4",
+          "container": "1"
+        },
+        {
+          "id": "Label1_copy",
+          "field type": "output field",
+          "css class": "label",
+          "value": "Label:",
+          "left": "40px",
+          "top": "20px",
+          "width": "150px",
+          "layout": "Layout4",
+          "container": "1"
+        },
+        {
+          "id": "bt_cierre",
+          "field type": "css button",
+          "value": "Cambiar Grupo",
+          "response": {
+            "fieldName": "bt_cierre",
+            "customTrue": "",
+            "customFalse": "",
+            "dataType": "indicator",
+            "formatting": "Indicator",
+            "indFormat": "1 / 0"
+          },
+          "color": {
+            "fieldName": "btcierre_color",
+            "dataLength": "25",
+            "trimLeading": "false",
+            "trimTrailing": "true",
+            "blankFill": "false",
+            "rjZeroFill": "false",
+            "dataType": "varchar",
+            "formatting": "Text",
+            "textTransform": "none"
+          },
+          "font size": "20px",
+          "text align": "center",
+          "theme": "C - Gray",
+          "disabled": {
+            "fieldName": "btcierre_disabled",
+            "customTrue": "",
+            "customFalse": "",
+            "dataType": "indicator",
+            "formatting": "Indicator",
+            "indFormat": "true / false"
+          },
+          "left": "5%",
+          "top": "80%",
+          "height": "45px",
+          "width": "90%",
+          "onclick": "cargarControl('cierre_jornada');",
+          "layout": "ly_cambio_grupo",
+          "container": "1"
+        },
+        {
+          "id": "lb_title_grupo_actual",
+          "field type": "output field",
+          "css class": "label",
+          "value": "Grupo Actual",
+          "left": "10%",
+          "top": "15%",
+          "width": "80%",
+          "font size": "30px",
+          "text align": "center",
+          "layout": "ly_cambio_grupo",
+          "container": "1"
+        },
+        {
+          "id": "lb_nuevo_grupo",
+          "field type": "output field",
+          "css class": "label",
+          "value": "Nuevo Grupo:",
+          "left": "5.6%",
+          "top": "60%",
+          "width": "40%",
+          "height": "30px",
+          "font size": "30px",
+          "text align": "center",
+          "layout": "ly_cambio_grupo",
+          "container": "1"
+        },
+        {
+          "id": "sb_nuevo_grupo",
+          "field type": "select box",
+          "top": "60%",
+          "choices": "Option 1,Option 2",
+          "width": "40%",
+          "right": "5.6%",
+          "height": "30px",
+          "layout": "ly_cambio_grupo",
+          "container": "1"
+        },
+        {
+          "id": "Image1",
+          "field type": "image",
+          "image source": "images/barratop.jpg",
+          "left": "0px",
+          "top": "0px",
+          "height": "100%",
+          "width": "100%",
+          "z index": "1",
+          "layout": "ly_cabecera",
+          "container": "1"
+        },
+        {
+          "id": "lb_grupo_actual",
+          "field type": "output field",
+          "css class": "label",
+          "value": "Grupo Actual",
+          "font size": "24px",
+          "text align": "center",
+          "left": "10%",
+          "top": "35%",
+          "width": "80%",
+          "layout": "ly_cambio_grupo",
+          "container": "1"
+        }
+      ]
+    }
+  ],
+  "keywords": [],
+  "canvas width": 360,
+  "canvas height": 640,
+  "long name aliases": true
+}
